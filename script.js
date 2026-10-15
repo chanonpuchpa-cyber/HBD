@@ -17,25 +17,13 @@ const insideWorld = document.getElementById("inside-world");
 const replayButton = document.getElementById("replay");
 
 // เพิ่มชื่อรูปที่มีจริงในโฟลเดอร์ images
-const photoFiles = [
-  "images/photo1.jpg",
-  "images/photo2.jpg",
-  "images/photo3.jpg",
-  "images/photo4.jpg",
-  "images/photo5.jpg",
-  "images/photo6.jpg",
-  "images/photo7.jpg",
-  "images/photo8.jpg",
-  "images/photo9.jpg",
-  "images/photo10.jpg",
-  "images/photo11.jpg",
-  "images/photo12.jpg",
-  "images/photo13.jpg",
-  "images/photo14.jpg",
-  "images/photo15.jpg",
-  "images/photo16.jpg"
-];
-
+const photoFiles = Array.from(
+  { length: 16 },
+  (_, i) => new URL(
+    `images/photo${i + 1}.jpg`,
+    document.baseURI
+  ).href
+);
 // ปรับจำนวนรูปบนโลกและฉากด้านใน
 const GALLERY_COLUMNS = 12;
 const GALLERY_ROWS = 7;
@@ -225,6 +213,15 @@ function makePhoto(src, className, index) {
     console.warn(`ไม่พบรูปภาพ: ${src}`);
     image.style.display = "none";
   }, { once: true });
+
+  image.addEventListener("load", () => {
+  console.log("โหลดรูปสำเร็จ:", image.src);
+});
+
+image.addEventListener("error", () => {
+  console.error("โหลดรูปไม่สำเร็จ:", image.src);
+  image.style.display = "none";
+});
 
   return image;
 }
