@@ -18,22 +18,22 @@ const replayButton = document.getElementById("replay");
 
 // เพิ่มชื่อรูปที่มีจริงในโฟลเดอร์ images
 const photoFiles = [
-  "photo1.jpg",
-  "photo2.jpg",
-  "photo3.jpg",
-  "photo4.jpg",
-  "photo5.jpg",
-  "photo6.jpg",
-  "photo7.jpg",
-  "photo8.jpg",
-  "photo9.jpg",
-  "photo10.jpg",
-  "photo11.jpg",
-  "photo12.jpg",
-  "photo13.jpg",
-  "photo14.jpg",
-  "photo15.jpg",
-  "photo16.jpg"
+  "images/photo1.jpg",
+  "images/photo2.jpg",
+  "images/photo3.jpg",
+  "images/photo4.jpg",
+  "images/photo5.jpg",
+  "images/photo6.jpg",
+  "images/photo7.jpg",
+  "images/photo8.jpg",
+  "images/photo9.jpg",
+  "images/photo10.jpg",
+  "images/photo11.jpg",
+  "images/photo12.jpg",
+  "images/photo13.jpg",
+  "images/photo14.jpg",
+  "images/photo15.jpg",
+  "images/photo16.jpg"
 ];
 
 // ปรับจำนวนรูปบนโลกและฉากด้านใน
