@@ -1,0 +1,85 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff2f8">
+    <title>Happy Birthday, My Love ♡</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main id="app">
+      <div class="pastel-sky"></div>
+      <canvas id="particles"></canvas>
+      <div id="warp"></div>
+
+      <!-- Opening: tap anywhere -->
+      <section id="intro" class="scene active" aria-label="Tap to begin">
+        <div class="intro-orbit orbit-one"></div>
+        <div class="intro-orbit orbit-two"></div>
+        <div class="intro-heart">♡</div>
+        <span class="tap-sparkle sparkle-one">✦</span>
+        <span class="tap-sparkle sparkle-two">✧</span>
+        <span class="tap-sparkle sparkle-three">✿</span>
+      </section>
+
+      <!-- Countdown -->
+      <section id="countdown" class="scene">
+        <div id="count-number">3</div>
+        <div class="count-stars">✦　♡　✧</div>
+      </section>
+
+      <!-- Birthday title -->
+      <section id="title-scene" class="scene">
+        <div class="title-decoration">୨୧</div>
+        <h1 id="title-word">HAPPY</h1>
+        <div class="title-decoration bottom-decoration">♡ ✧ ♡</div>
+      </section>
+
+      <!-- Rotating 3D photo globe -->
+      <section id="gallery-scene" class="scene">
+        <div class="scene-heading">OUR HAPPY LITTLE WORLD</div>
+
+        <button id="gallery-button" type="button" aria-label="Enter our photo world">
+          <div id="gallery-window">
+            <div id="gallery-world"></div>
+            <div class="gallery-glow"></div>
+          </div>
+        </button>
+
+        <div class="scene-hint">TAP TO ENTER OUR MEMORIES ♡</div>
+        <span class="floating-deco deco-a">♡</span>
+        <span class="floating-deco deco-b">✿</span>
+        <span class="floating-deco deco-c">✧</span>
+      </section>
+
+      <!-- Immersive inner photo wall -->
+      <section id="inside-scene" class="scene">
+        <div class="inside-background"></div>
+        <div id="inside-camera">
+          <div id="inside-world"></div>
+        </div>
+
+        
+  <div id="love-message">
+    <p class="love-line">สุขสันต์วันเกิดนะที่รัก ♡</p>
+    <p class="love-line">ขอให้เธอมีความสุขมาก ๆ ในทุกวัน</p>
+    <p class="love-line">ขอบคุณที่เข้ามาเป็นความสุขของเค้านะ</p>
+    <p class="love-line">ขอให้ทุกความฝันของเธอเป็นจริง</p>
+    <p class="love-line">ไม่ว่าจะเจออะไร เค้าจะอยู่ข้าง ๆ เธอเสมอ</p>
+    <p class="love-line final-line">รักเธอมากที่สุดเลยนะ ที่รัก ♡</p>
+  </div>
+
+
+        <button id="replay" type="button">♡ PLAY AGAIN</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
